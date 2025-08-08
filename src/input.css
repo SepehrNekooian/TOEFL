@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+@theme{
+    --color-primary:#000080;
+    --color-secondary:#87AFC7;
+    --color-primary-text:#4f5665;
+    --color-heading-text:#08132A;
+    --font-primary:"PT Sans", sans-serif;
+}
+
+@layer{
+    .section-container{
+        @apply max-w-[1440px] container mx-auto px-4 py-28;
+    }
+}
+
+
+
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    opacity: 1;
+    margin: 0 5px !important;
+
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--color-primary);
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: "" !important;
+
+}
